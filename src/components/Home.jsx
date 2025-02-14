@@ -6,7 +6,7 @@ import { TypewriterEffectSmooth } from './ui/typewriter-effect';
 const words = [
     {
         text: "Hello",
-        className: "text-3xl  sm:text-4xl md:text-6xl lg:text-8xl ",
+        className: "text-3xl  sm:text-4xl md:text-6xl lg:text-8xl text-purple-900 dark:text-purple-500",
     },
     {
         text: "\u00A0", // Unicode for non-breaking space
