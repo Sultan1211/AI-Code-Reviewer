@@ -9,7 +9,7 @@ const words = [
         className: "text-3xl  sm:text-4xl md:text-6xl lg:text-8xl text-white dark:text-white",
     },
     {
-        text: "\u00A0", // Unicode for non-breaking space
+        text: "\u00A0", 
       },
     {
         text: "World!",
