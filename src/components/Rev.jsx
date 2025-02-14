@@ -35,6 +35,7 @@ export function Rev() {
 
     async function reviewCode() {
         setLoading(true);
+        setReviewToShow("");
         try {
             const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/ai/get-review`, { code });
             setReview(response.data);
@@ -67,8 +68,7 @@ export function Rev() {
                 />
                 <button
                     onClick={reviewCode}
-                    className="absolute bottom-4 right-4 text-black font-semibold select-none cursor-pointer bg-white px-4 py-2 rounded-md flex items-center justify-center"
-                >
+                    className="absolute bottom-4 right-4 text-black font-semibold select-none cursor-pointer bg-white px-4 py-2 rounded-md flex items-center justify-center"                >
                     {loading ? (
                         <div className="w-6 h-6 border-4 border-t-blue-500 border-gray-300 rounded-full animate-spin"></div>
                     ) : (
