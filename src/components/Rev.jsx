@@ -36,7 +36,7 @@ export function Rev() {
     async function reviewCode() {
         setLoading(true);
         try {
-            const response = await axios.post("https://ai-code-reviewer-backend-94m9.onrender.com/ai/get-review", { code });
+            const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/ai/get-review`, { code });
             setReview(response.data);
         } catch (error) {
             console.error("Error fetching review:", error);
