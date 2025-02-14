@@ -9,8 +9,7 @@ import Markdown from 'react-markdown';
 
 export function Rev() {
     const [code, setCode] = useState(`//Write your code here
-
-   function sum() { 
+ function sum() { 
    return 1 + 1;
     }`);
     const [review, setReview] = useState("");
